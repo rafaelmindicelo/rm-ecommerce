@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>RM Ecommerce - Cadastre-se</title>
+</head>
+<body>
+  <header>
+    <img src="./images/gama.png" alt="Logo Gama Academy">
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Cadastre-se</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+    </ul>
+  </nav>
+
+  <div id="container">
+    <h1>Cadastro de Usuário</h1>
+    <div id="content">
+      <form id="form">
+
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="name">Nome</label>
+            <input type="text" class="form-control" id="name" placeholder="Digite seu nome completo" required>
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="birthday">Data Nasc.:</label>
+            <input type="date" class="form-control" id="birthday" required>
+          </div>
+          
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" required>
+          </div>
+
+          <div class="form-group col-sm-6">
+            <label for="telephone">Tel/Cel</label>
+            <input type="text" class="form-control" id="telephone"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder="telefone/celular com DDD"
+            maxlength="11" required>
+          </div>
+        </div>                
+        
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="emailCheck">
+            <label class="form-check-label" for="emailCheck">
+              Aceito receber promoções por e-mail
+            </label>
+          </div>
+        </div>
+        <div class="col text-center">
+          <button type="submit" class="btn btn-dark" id="register">Cadastrar</button>
+        </div>
+      </form>
+    </div>
+    
+  </div>
+
+  <footer>
+    Developed by Rafael Mindicelo &#128526;
+  </footer>
+</body>
+<script src="./scripts/script.js"></script>
+</html>
